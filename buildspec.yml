@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+        - python3 -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
