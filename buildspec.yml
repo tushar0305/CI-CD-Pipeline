@@ -3,7 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-        - echo "hello"
+        - sudo yum install python-virtualenv
+        - python3 -m venv venv
+        - . venv/bin/activate
+        - pip install Flask
   build:
     commands:
       - echo Build started on `date`
