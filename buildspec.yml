@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - pip3 --version
+        - echo "hello"
   build:
     commands:
       - echo Build started on `date`
