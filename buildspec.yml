@@ -3,12 +3,14 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+        - curl https://bootstrap.pypa.io/pip/3.4/get-pip.py -o get-pip.py
+        - python3 get-pip.py --user --force-reinstall
+        - python3 -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python test_app.py
+      - python3 test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
